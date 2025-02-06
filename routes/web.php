@@ -10,13 +10,13 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return Inertia::render('Welcome');
+    return Inertia::render('About');
 });
 Route::get('/projects', function () {
-    return Inertia::render('Welcome');
+    return Inertia::render('Projects');
 });
 Route::get('/contacts', function () {
-    return Inertia::render('Welcome');
+    return Inertia::render('Contacts');
 });
 
 
