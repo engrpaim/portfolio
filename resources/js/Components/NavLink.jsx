@@ -1,15 +1,18 @@
 import { Link, usePage } from '@inertiajs/react';
 import { links } from '@/Arrays/HrefDetails';
-
-
+import { ScrollNavigate } from '@/Animations/ScrollNavigate';
+import { findLink } from '@/Arrays/FindLink';
 const Navigation = () => {
     const { url } = usePage();
+    const findlink = findLink();
+    console.log(findlink.next);
 
 
 
     return (
 
-        <div className="flex justify-end flex-grow transition max-md:justify-center md:me-60 eas-in-out lg:me-72">
+        <div className="flex justify-end flex-grow transition max-md:justify-center md:me-60 eas-in-out lg:me-96" >
+            <ScrollNavigate next={findlink.next} back={findlink.back} />
             {
                 links.map((link, index) => {
                     const isActive = url === link.href;

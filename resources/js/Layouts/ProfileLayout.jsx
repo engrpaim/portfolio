@@ -7,7 +7,7 @@ export default function ProfileLayout({children, title}) {
             <Head title={title} />
             <div className="overflow-x-hidden max-w-screen ">
                 <div className="fixed inset-x-0 top-0 z-10 ">
-                    <div className="pt-2 bg-white dark:bg-gray-950">
+                    <div className="pt-5 bg-white dark:bg-gray-950">
                         <NavLink/>
                     </div>
                 </div>

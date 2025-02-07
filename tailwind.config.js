@@ -38,7 +38,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ['Copperplate', ...defaultTheme.fontFamily.sans],
             },
         },
     },

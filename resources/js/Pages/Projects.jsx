@@ -9,7 +9,7 @@ export default function About(){
     console.log(linkData);
     return (
         <ProfileLayout title="Projects">
-            <div className={`${bgcolor} w-lvw h-lvh ease-in-out` }>
+            <div className={`${bgcolor} w-lvw h-lvh ease-in-out duration-300 ` }>
                 <div className="flex mt-16">
                         Hello
                 </div>
