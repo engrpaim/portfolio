@@ -15,7 +15,7 @@ export default function About(){
         <ProfileLayout title="About">
             <div className={`${bgcolor} h-lvh min-h-fit w-lvw md:h-full lg:h-full transition-all` }>
                 <div className="flex flex-col-reverse items-center justify-center md:flex-row ">
-                    <div className="flex items-center justify-center w-full mt-20 mb-20 md:mt-0 md:h-svh md:w-1/3 md:justify-normal">
+                    <div className="flex items-center justify-center w-full mt-20 mb-20 min-w-fit md:mt-0 md:h-svh md:w-1/3 md:justify-normal">
                         <div className="flex flex-wrap items-center justify-center h-20 text-center bg-gray-200 shadow-lg h-min-fit w-60 md:w-20 md:h-80 md:block drop-shadow-xl">
                             <div className="p-0.5  md:hover:bg-blue-200 h-1/3 md:hover:scale-110 hover:md:drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]">
                                 <a href="https://linkedin.com/in/jose-ephraim-batacan-51a35524a" target="_blank" >

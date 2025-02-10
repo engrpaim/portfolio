@@ -1,4 +1,3 @@
-import { Inertia } from "@inertiajs/inertia";
 import { useEffect , useState } from "react";
 
 const ScrollNavigate  = ({next,back}) => {
@@ -16,15 +15,15 @@ const ScrollNavigate  = ({next,back}) => {
           if (bottom) {
 
             const nextPageUrl = next;
+            window.location.href = nextPageUrl;
 
-            Inertia.visit(nextPageUrl);
           }
 
           if (document.documentElement.scrollTop == 0) {
 
             const nextPageUrl = back;
+            window.location.href = nextPageUrl;
 
-            Inertia.visit(nextPageUrl);
           }
 
 
@@ -52,12 +51,12 @@ const ScrollNavigate  = ({next,back}) => {
         const handleSwipe = () => {
             if (touchEnd < touchStart) {
 
-                Inertia.visit(next);
+                window.location.href = next;
             }
 
             if (touchEnd > touchStart) {
 
-                Inertia.visit(back);
+                window.location.href = back;
             }
         };
         window.addEventListener("scroll", handleScroll);
