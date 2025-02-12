@@ -35,11 +35,18 @@ export default {
         './resources/js/**/*.jsx',
     ],
     safelist,
+
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Copperplate', ...defaultTheme.fontFamily.sans],
+                sans: ['Garamond', 'Copperplate', ...defaultTheme.fontFamily.sans],
             },
+        },
+        screens: {
+        'sm': '900px',
+        'md': '980px',
+        'lg': '1024px',
+        'xl': '1280px',
         },
     },
 

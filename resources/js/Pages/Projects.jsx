@@ -9,11 +9,12 @@ export default function About(){
     console.log(linkData);
     return (
         <ProfileLayout title="Projects">
-            <div className={`${bgcolor} w-lvw h-lvh ease-in-out duration-300 ` }>
-                <div className="flex mt-16">
-                        Hello
+            <div className={`${bgcolor} h-lvh min-h-fit w-lvw  transition-all` }>
+                <div className="flex flex-col-reverse items-center justify-center md:flex-row ">
+
                 </div>
             </div>
         </ProfileLayout>
     );
 }
+
