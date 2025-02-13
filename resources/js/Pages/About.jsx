@@ -1,8 +1,9 @@
 import ProfileLayout from "@/Layouts/ProfileLayout";
+import Phone from "@/Icons/phone";
 import { findLink } from "@/Arrays/FindLink";
 import { Link } from "@inertiajs/react";
 import Profile from "@/Icons/Profile.png";
-
+import Scroll from "@/Icons/Scroll";
 export default function About(){
 
 
@@ -14,35 +15,76 @@ export default function About(){
     return (
         <ProfileLayout title="About">
              <div className={`bg-gradient-to-bl from-purple-200 via-sky-100 to-blue-50  h-lvh min-h-fit w-lvw  transition-all`}>
-                <div className="flex flex-col items-center justify-center mt-20 md:mt-5">
-                    <div className="text-[4rem] md:text-[12rem]   font-semibold text-slate-900"><h1>SMP.</h1></div>
 
-                    <div className="justify-center w-screen h-screen md:grid md:grid-cols-2">
-                        <div className="flex flex-col">
+                <div className="flex flex-col items-center justify-center mt-20 md:mt-20">
+                    <div className="text-[3rem] md:text-[7rem]   font-semibold text-slate-900 "><h1 className="drop-shadow-lg">I'm Ephraim.</h1></div>
+
+                    <div className="justify-center w-screen md:grid md:grid-cols-2 min-w-fit min-h-fit">
+
+                        <div className="flex justify-center w-full h-full m-2 min-w-fit min-h-fit ">
+                            <div className="flex bg-white w-80 h-96 ">
+
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col flex-wrap md:mx-5 min-w-fit">
                             <div className="grid grid-flow-row h-fit w-fit">
-                                <div className="flex text-center justify-center bg-white md:w-[55rem] p-[0.5rem] h-fit  ">
-                                    <h1 className="text-[2rem] md:text-[2.5rem] text-center font-base">I'm a Web Developer from Laguna, Philippines</h1>
+                                <div className="flex text-center justify-center md:w-full p-[0.5rem] h-fit  min-w-fit">
+                                    <h1 className="text-[1.2rem] md:text-[2.5rem] justify-center text-start font-extrabold px-[1.5rem]  md:pr-[10rem] min-w-fit">
+                                        I'm a Web Developer specializing in building and optimizing websites to enhance and streamline production processes.</h1>
                                 </div>
-                                <div className="flex m-[1rem] bg-white md:h-fit h-lvh">
-                                    <p className="md:text-[1.5rem]  justify-center p-[4rem]">
-                                    I’m a Web Developer with a focus on building and managing websites that drive the success of production processes.
-                                    My expertise lies in data gathering, creating tools for product dimension checks, generating QR codes for streamlined processes, and continuously improving existing websites to meet evolving business needs.
-                                    With a passion for solving problems and optimizing workflows, I specialize in delivering practical, user-friendly solutions that help businesses achieve operational efficiency.
+                                <div className="flex mx-[1rem] justify-center md:w-full   md:h-fit h-fit  md:pr-[8rem] min-w-fit">
+                                    <p className="text-[1rem] md:text-[1.5rem]  justify-center px-[1rem]    md:pr-[10rem] text-justify min-w-fit">
+                                        I specialize in building tools for data gathering, product dimension checks, and QR code generation to improve workflow efficiency.
+                                        I'm currently seeking job opportunities to leverage my skills in enhancing production environments through web development.
                                     <br/><br/>
-                                    I am currently open to job opportunities where I can contribute my skills, continue learning, and grow professionally.
-                                    If you have an exciting opportunity that aligns with my experience and expertise, please don’t hesitate to reach out.
-                                    <br/><br/>
-                                   <strong>Let’s connect!</strong>
                                     </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div className="flex text-[1rem] w-[18rem] md:text-[1.7rem] text-white justify-between rounded-full bg-gradient-to-r from-cyan-900 to-blue-900 h-[3rem] mt-5 md:w-[28rem] md:h-[5rem] md:mt-[8rem] items-center px-5 md:px-9 hover:shadow-lg ">
+                        <div>
+                            <h1 className="font-bold ">Automation Engineer</h1>
+                        </div>
+                        <div>
+                            <h1 className="font-bold">23~25</h1>
+                        </div>
+                    </div>
+                    <div className="flex w-fit rounded-[1rem] h-fit md:w-[100rem]  bg-sky-50 my-[5rem] md:rounded-[7rem] drop-shadow-2xl">
+                        <div className="grid items-start w-full grid-flow-row min-h-fit md:grid-cols-2 md:grid-rows-2 min-w-fit ">
+                            <div className="flex items-center justify-center p-[1.2rem] md:p-[5rem] ">
+                                <div className="text-[2rem] bg-white md:w-[400rem]">
+                                    <div className="w-fit">
+                                        <h1 className="font-semibold">01</h1>
+                                        <h1 className="font-bold">PLAN</h1>
+                                        <h3 className="text-[1.5rem]">Facilitate a meeting to discuss the production requirements for enhancing data gathering efficiency, visualizing production metrics, and developing functions to automate specific tasks through web development.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex items-center justify-center p-[1.2rem] md:p-[5rem] ">
+                                <div className="text-[2rem] bg-white md:w-[400rem]">
+                                    <div className="w-fit">
+                                        <h1 className="font-semibold">01</h1>
+                                        <h1 className="font-bold">PLAN</h1>
+                                        <h3 className="text-[1.5rem]">Facilitate a meeting to discuss the production requirements for enhancing data gathering efficiency, visualizing production metrics, and developing functions to automate specific tasks through web development.</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="flex items-center justify-center w-full h-full bg-black"><div className="flex bg-white w-96 h-96 "></div></div>
+                    </div>
 
-
+                    <div className="flex md:w-[100rem] md:mb-[6rem]  justify-self-start mt-7">
+                        <Phone></Phone>
                     </div>
                 </div>
+
             </div>
+
         </ProfileLayout>
     );
 }

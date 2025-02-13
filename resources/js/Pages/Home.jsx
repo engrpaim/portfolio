@@ -1,19 +1,19 @@
 import ProfileLayout from "@/Layouts/ProfileLayout";
-import { findLink } from "@/Arrays/FindLink";
-import { Link } from "@inertiajs/react";
+// import { findLink } from "@/Arrays/FindLink";
+// import { Link } from "@inertiajs/react";
 import Profile from "@/Icons/Profile.png";
-
+// import Scroll from "@/Icons/Scroll";
 export default function About(){
 
 
-    const linkData = findLink();
+    // const linkData = findLink();
 
-    const bgcolor = `${linkData.color}`;
+    // const bgcolor = `${linkData.color}`;
 
 
     return (
         <ProfileLayout title="Home">
-            <div className={`bg-gradient-to-bl from-purple-200 via-sky-100 to-blue-50  h-lvh min-h-fit w-lvw md:h-full lg:h-full transition-all` }>
+            <div className={`flex flex-col bg-gradient-to-bl from-purple-200 via-sky-100 to-blue-50  h-lvh min-h-fit w-lvw md:h-full lg:h-full transition-all` }>
                 <div className="flex flex-col-reverse items-center justify-center md:flex-row ">
                     <div className="flex items-center justify-center w-full mt-20 mb-20 min-w-fit md:mt-0 md:h-svh md:w-1/3 md:justify-normal">
                         <div className="flex flex-wrap items-center justify-center h-20 text-center shadow-lg sm:bg-white md:bg-gray-200 md:bgh-min-fit w-60 md:w-20 md:h-80 md:block drop-shadow-xl">
@@ -47,17 +47,19 @@ export default function About(){
                         <article className="space-y-4 text-xs leading-relaxed text-center break-words text-wrap space md:text-3xl">
                             <p className="space-y-10">
                                 <h1 className="font-[1000] lg:text-5xl text-2xl md:text-5xl my-2">
-                                HI , I'M <span lang="la" title="Pronunciation: /ˈē-fri-əm/">EPHRAIM</span></h1><br/>
+                                HI , I'M <span lang="la" title="Pronunciation: /ˈē-fri-əm/">EPHRAIM</span><h1>/efräˈim/</h1></h1><br/>
                                 A Results-Driven Web Developer specializing in <br /> Creating , Managing websites
                                 And Web applications that <br className=" md:hidden"/> contribute to the success of the overall product.
                             </p>
                         </article>
                     </div>
+
                     <div className="flex items-center justify-center w-1/3 md:h-svh ">
                         <img src={Profile} alt="Picture of Developer"  className="mt-32 mb-20 w-70 h-70 min-h-70 min-w-70 md:mt-0 md:mb-52"/>
                     </div>
                 </div>
             </div>
+
         </ProfileLayout>
     );
 }
