@@ -58,27 +58,46 @@ export default function About(){
                     <div className="flex w-fit rounded-[1rem] h-fit md:w-[100rem]  bg-sky-50 my-[5rem] md:rounded-[7rem] drop-shadow-2xl">
                         <div className="grid items-start w-full grid-flow-row min-h-fit md:grid-cols-2 md:grid-rows-2 min-w-fit ">
                             <div className="flex items-center justify-center p-[1.2rem] md:p-[5rem] ">
-                                <div className="text-[2rem] bg-white md:w-[400rem]">
+                                <div className="text-[1.2rem] md:text-[2rem] bg-white md:w-[400rem]">
                                     <div className="w-fit">
                                         <h1 className="font-semibold">01</h1>
                                         <h1 className="font-bold">PLAN</h1>
-                                        <h3 className="text-[1.5rem]">Facilitate a meeting to discuss the production requirements for enhancing data gathering efficiency, visualizing production metrics, and developing functions to automate specific tasks through web development.</h3>
+                                        <h3 className="text-[1.1rem] md:text-[1.5rem]">Facilitate a meeting to discuss the production requirements for enhancing data gathering efficiency, visualizing production metrics, and developing functions to automate specific tasks through web development.</h3>
                                     </div>
                                 </div>
                             </div>
                             <div className="flex items-center justify-center p-[1.2rem] md:p-[5rem] ">
-                                <div className="text-[2rem] bg-white md:w-[400rem]">
+                                <div className="text-[1.2rem] md:text-[2rem] bg-white md:w-[400rem]">
                                     <div className="w-fit">
-                                        <h1 className="font-semibold">01</h1>
-                                        <h1 className="font-bold">PLAN</h1>
-                                        <h3 className="text-[1.5rem]">Facilitate a meeting to discuss the production requirements for enhancing data gathering efficiency, visualizing production metrics, and developing functions to automate specific tasks through web development.</h3>
+                                        <h1 className="font-semibold">02</h1>
+                                        <h1 className="font-bold">DESIGN</h1>
+                                        <h3 className="text-[1.1rem] md:text-[1.5rem]">Crafted and optimized the UX/UI design by aligning with production requirements, ensuring a seamless and intuitive user experience.</h3>
                                     </div>
                                 </div>
                             </div>
+                            <div className="flex items-center justify-center p-[1.2rem] md:p-[5rem] ">
+                                <div className="text-[1.2rem] md:text-[2rem] bg-white md:w-[400rem]">
+                                    <div className="w-fit">
+                                        <h1 className="font-semibold">03</h1>
+                                        <h1 className="font-bold">COLLABORATE</h1>
+                                        <h3 className="text-[1.1rem] md:text-[1.5rem]">Great ideas don’t come from one mind; they are born from the synergy of many, from the collective spark that emerges when diverse perspectives come together. In the world of creativity, collaboration is not just a tool—it's the heartbeat that drives innovation.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex items-center justify-center p-[1.2rem] md:p-[5rem] ">
+                                <div className="text-[1.2rem] md:text-[2rem] bg-white md:w-[400rem]">
+                                    <div className="w-fit">
+                                        <h1 className="font-semibold">04</h1>
+                                        <h1 className="font-bold">ADAPTABLE</h1>
+                                        <h3 className="text-[1.1rem] md:text-[1.5rem]">In the ever-evolving world of web development, adaptability is essential. I embrace change and view each new technology, tool, and trend as an opportunity to grow and improve.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
 
-                    <div className="flex md:w-[100rem] md:mb-[6rem]  justify-self-start mt-7">
+                    <div className="flex md:w-[100rem] mt-0 mb-[2rem] md:mb-[6rem]  justify-self-start mt-7">
                         <Phone></Phone>
                     </div>
                 </div>
